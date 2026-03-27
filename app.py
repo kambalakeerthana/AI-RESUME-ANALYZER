@@ -4,7 +4,9 @@ from google import genai
 import time
 
 # SETUP THE CLIENT
-client = genai.Client(api_key=st.secrets["AIzaSyB_WCCOX3ubWsIdDND46emcV3Q5iQgKFwI"])
+# Use the label "GOOGLE_API_KEY" instead of the long code
+client = genai.Client(api_key=st.secrets["GOOGLE_API_KEY"])
+
 
 
 # PAGE CONFIGURATION
