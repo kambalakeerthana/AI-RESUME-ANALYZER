@@ -4,7 +4,8 @@ from google import genai
 import time
 
 # SETUP THE CLIENT
-client = genai.Client(api_key="AIzaSyB_WCCOX3ubWsIdDND46emcV3Q5iQgKFwI")
+client = genai.Client(api_key=st.secrets["AIzaSyB_WCCOX3ubWsIdDND46emcV3Q5iQgKFwI"])
+
 
 # PAGE CONFIGURATION
 st.set_page_config(page_title="AI Resume Analyzer", page_icon="📋")
